@@ -10,9 +10,9 @@ public class main
         CreditCardApplication c3 = new CreditCardApplication("Mark", "Park", 31, 790);
 
         //checks the applicants against the approval criteria
-        System.out.println(c1.firstName + " " + c1.lastName + " was accepted: " + c1.getAccepted());
-        System.out.println(c2.firstName + " " + c2.lastName + " was accepted: " + c2.getAccepted());
-        System.out.println(c3.firstName + " " + c3.lastName + " was accepted: " + c3.getAccepted());
+        System.out.println(c1.firstName + " " + c1.lastName + " was accepted: " + CardQualification.isAccepted(c1));
+        System.out.println(c2.firstName + " " + c2.lastName + " was accepted: " + CardQualification.isAccepted(c2));
+        System.out.println(c3.firstName + " " + c3.lastName + " was accepted: " + CardQualification.isAccepted(c3));
 
     }
 }

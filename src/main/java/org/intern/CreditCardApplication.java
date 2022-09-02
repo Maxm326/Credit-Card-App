@@ -18,18 +18,20 @@ public class CreditCardApplication {
         this.creditScore = creditScore;
     }
 
-    //method to make approval decision
-    public boolean getAccepted() {
-        if (age <= 18) {
-            return false;
-        } else if (creditScore < 780) {
-            return false;
-        } else {
-            return true;
-        }
+    public String getFirstName() {
+        return firstName;
     }
 
-    {
-
+    public String getLastName() {
+        return lastName;
     }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public Integer getCreditScore() {
+        return creditScore;
+    }
+
 }
